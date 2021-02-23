@@ -25,7 +25,7 @@ class TestMember:
         self.driver.quit()
 
     @pytest.mark.parametrize(("name", "phonenumber"),
-                             yaml.safe_load(open("./addMem.ymal", encoding="utf-8")))
+                             yaml.safe_load(open("addMem.ymal", encoding="utf-8")))
     def test_addMember(self, name, phonenumber):
         self.driver.find_element(MobileBy.XPATH, "//*[@text= '通讯录']").click()
         self.driver.find_element_by_android_uiautomator('new UiScrollable(new UiSelector().'
@@ -43,7 +43,7 @@ class TestMember:
 
     @pytest.mark.skip
     def test_yaml(self):
-        print(yaml.safe_load(open("./addMem.ymal", encoding="utf-8")))
+        print(yaml.safe_load(open("addMem.ymal", encoding="utf-8")))
 
 
 
