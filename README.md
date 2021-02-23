@@ -1,8 +1,8 @@
 # HogwartsLagou05
 霍格沃兹拉钩第五期作业
-pytest第一次作业：
+# pytest第一次作业：
     HogwartsLagou05/HomeWorkYing/Pytestfirst
 
-appnium作业：
+# appnium作业：
 作业一：企业微信添加成员
     HogwartsLagou05/HomeWorkYing/appniumhomework
