@@ -1,0 +1,43 @@
+
+class Testcal:
+    def test_add(self, get_cal, get_add_datas):
+        result = None
+        try:
+            result = get_cal.add(get_add_datas[0], get_add_datas[1])
+            if isinstance(result, float):
+                result = round(result, 2)
+        except Exception as e:
+            print(e)
+        assert result == get_add_datas[2]
+
+    def test_sub(self, get_cal, get_sub_datas):
+        result = None
+        try:
+            result = get_cal.sub(get_sub_datas[0], get_sub_datas[1])
+            if isinstance(result, float):
+                result = round(result, 2)
+        except Exception as e:
+            print(e)
+        assert result == get_sub_datas[2]
+
+    def test_mul(self, get_cal, get_mul_datas):
+        result = None
+        try:
+            result = get_cal.mul(get_mul_datas[0], get_mul_datas[1])
+            if isinstance(result, float):
+                result = round(result, 2)
+        except Exception as e:
+            print(e)
+        assert result == get_mul_datas[2]
+
+    def test_div(self, get_cal, get_div_datas):
+        result = None
+        try:
+            result = get_cal.div(get_div_datas[0], get_div_datas[1])
+            if isinstance(result, float):
+                result = round(result, 2)
+            if get_div_datas[1] == 0:
+                print("分母不能为0")
+        except Exception as e:
+            print(e)
+        assert result == get_div_datas[2]

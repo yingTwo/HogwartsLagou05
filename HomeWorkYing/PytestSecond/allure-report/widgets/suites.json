@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "6d098e71a1fa3e5e80ce9a3e080b7e18",
+    "name" : "test_calNew",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 16
+    }
+  } ]
+}
