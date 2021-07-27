@@ -1,4 +1,0 @@
-开始计算
-request.param的测试数据是：[1, 0, 4000]
-division by zero
-计算结束

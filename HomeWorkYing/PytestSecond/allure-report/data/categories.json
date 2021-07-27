@@ -7,12 +7,12 @@
       "name" : "AssertionError: assert 3000 == 4000",
       "children" : [ {
         "name" : "test_add[错误]",
-        "uid" : "4a82d186b9bc2190",
+        "uid" : "5de92e5a15c3ea12",
         "parentUid" : "cd6594ebe3883fe720f990a920a5b825",
         "status" : "failed",
         "time" : {
-          "start" : 1627298403136,
-          "stop" : 1627298403137,
+          "start" : 1627381459236,
+          "stop" : 1627381459237,
           "duration" : 1
         },
         "flaky" : false,
@@ -24,13 +24,13 @@
       "name" : "AssertionError: assert -200 == 4000",
       "children" : [ {
         "name" : "test_sub[错误]",
-        "uid" : "5b81dfa3700b2e5",
+        "uid" : "a825fde54c92f7b3",
         "parentUid" : "2ca4c0af1b7cdd816b589994082364f1",
         "status" : "failed",
         "time" : {
-          "start" : 1627298403206,
-          "stop" : 1627298403207,
-          "duration" : 1
+          "start" : 1627381459320,
+          "stop" : 1627381459320,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -41,13 +41,13 @@
       "name" : "AssertionError: assert -20 == 20",
       "children" : [ {
         "name" : "test_mul[错误]",
-        "uid" : "b7cf9563fb101f0d",
+        "uid" : "c977f02348261356",
         "parentUid" : "940b359d5470bd6928e021a4d221b7ca",
         "status" : "failed",
         "time" : {
-          "start" : 1627298403245,
-          "stop" : 1627298403245,
-          "duration" : 0
+          "start" : 1627381459362,
+          "stop" : 1627381459363,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,12 +58,12 @@
       "name" : "AssertionError: assert None == 4000",
       "children" : [ {
         "name" : "test_div[错误]",
-        "uid" : "5732390b47e382b3",
+        "uid" : "1339aaf007f3eee",
         "parentUid" : "c62633ca3027adf0773081769ff31ff0",
         "status" : "failed",
         "time" : {
-          "start" : 1627298403279,
-          "stop" : 1627298403280,
+          "start" : 1627381459419,
+          "stop" : 1627381459420,
           "duration" : 1
         },
         "flaky" : false,

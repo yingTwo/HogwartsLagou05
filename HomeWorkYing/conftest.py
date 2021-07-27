@@ -36,7 +36,7 @@ with open(yaml_file_path, "r", encoding="utf-8") as f:
     ids = datasa["ids"]
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="module")
 def get_cal():
     print("获取计算机实例")
     cal = Calculator()
@@ -50,6 +50,15 @@ def get_add_datas(request):
     print(f"request.param的测试数据是：{data}")
     yield data
     print("计算结束")
+
+@pytest.fixture(params=datas["d_datas"], ids=ids["a_ids"])
+def get_div_datas(request):
+    print("开始计算")
+    data = request.param
+    print(f"request.param的测试数据是：{data}")
+    yield data
+    print("计算结束")
+
 @pytest.fixture(params=datas["s_datas"], ids=ids["a_ids"])
 def get_sub_datas(request):
     print("开始计算")
@@ -59,13 +68,6 @@ def get_sub_datas(request):
     print("计算结束")
 @pytest.fixture(params=datas["m_datas"], ids=ids["a_ids"])
 def get_mul_datas(request):
-    print("开始计算")
-    data = request.param
-    print(f"request.param的测试数据是：{data}")
-    yield data
-    print("计算结束")
-@pytest.fixture(params=datas["d_datas"], ids=ids["a_ids"])
-def get_div_datas(request):
     print("开始计算")
     data = request.param
     print(f"request.param的测试数据是：{data}")
