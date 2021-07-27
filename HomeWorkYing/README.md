@@ -9,11 +9,13 @@
     (/result,/allure-report)
     (data.yml,calculator.py,test_calNew.py)
     HogwartsLagou05/HomeWorkYing/PytestSecond/conftest.py
-   #####涉及allure命令：
+    
+   ##### 涉及allure命令：
    - 注意：命令是在test_calNew.py目录下运行 
    - pytest --alluredir=./resutl test_calNew.py
    - allure serve ./result   
-   ######以下为另一种方式：     
+   
+   ###### 以下为另一种方式：     
    - allure generate ./result
    - allure open -h 127.0.0.1 -p 8884 ./allure-report
 
